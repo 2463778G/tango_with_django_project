@@ -23,6 +23,8 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
+STATIC_DIR = os.path.join(BASE_DIR, 'static')
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '!rkc68-q)%7zbo48t3e=8=j)n2k=iadsv*bs#7rli-s%f-8g#h'
 
@@ -72,6 +74,8 @@ TEMPLATES = [
     },
 ]
 
+STATICFILES_DIRS = [STATIC_DIR, ]
+
 WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
 
@@ -104,6 +108,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
+STATIC_URL = '/static/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
