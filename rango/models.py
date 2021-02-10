@@ -17,12 +17,7 @@ class Page(models.Model):
         
     def __str__(self):
         return self.title
-    
-class PageAdmin(admin.ModelAdmin):
-    
-    def list():
-        list_display = ('title', 'category', 'url')
-        return list_display
+
         
         
         
